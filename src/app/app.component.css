@@ -1,0 +1,46 @@
+.move-test-area {
+  min-height: 50px;
+  width: 202px;
+  margin: 20px auto 0 auto;
+}
+
+.test-input {
+  min-height: 35px;
+  width: 195px;
+  margin-bottom: 15px;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.test-value-area {
+  min-height: 35px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  text-align: center;
+  border: 1px solid grey;
+}
+
+.test-value-area-title {
+  min-height: 27px;
+  width: 100%;
+  padding-top: 8px;
+  background-color: #C5DBE0;
+  color: black;
+  border-bottom: 1px solid grey;
+}
+
+.restore-default-button {
+  height: 35px;
+  width: 200px;
+  text-align: center;
+  margin: 30px auto 0 auto;
+  border-radius: 5px;
+  font-size: 0.9em;
+  background-color: #C5DBE0;
+  border: 1px solid grey;
+}

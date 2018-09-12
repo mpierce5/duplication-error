@@ -1,0 +1,21 @@
+<div class="move-test-area">
+
+  <div *ngFor="let testUnit of testList; let i = index">
+    <input
+      (blur)="editItem($event.target.value, i)"
+      class="test-input"
+      placeholder="Change Me"
+      [attr.value]="testUnit == '-- placeholder --' ? '': testUnit">
+  </div>
+
+  <div class="test-value-area">
+    <div class="test-value-area-title">Array Values</div>
+    <p *ngFor="let testUnit of testList">{{testUnit}}</p>
+  </div>
+
+  <button (click)="restoreDefaultSettings()"
+          class="restore-default-button">
+    Restore Defaults
+  </button>
+
+</div>
