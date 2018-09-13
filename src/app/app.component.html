@@ -5,11 +5,11 @@
     (blur)="editItem($event.target.value, i)"
     class="test-input"
     placeholder="Change Me"
-    [attr.value]="testUnit == '-- placeholder --' ? '': testUnit">
+    [attr.value]="testUnit.value == '-- placeholder --' ? '': testUnit.value">
 
   <div class="test-value-area">
     <div class="test-value-area-title">Array Values</div>
-    <p *ngFor="let testUnit of testList">{{testUnit}}</p>
+    <p *ngFor="let testUnit of testList">{{testUnit.value}}</p>
   </div>
 
   <button (click)="restoreDefaultSettings()"

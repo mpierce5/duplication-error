@@ -6,23 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  testList: string[] = [
-    '-- placeholder --',
-    '-- placeholder --',
-    '-- placeholder --',
-    '-- placeholder --'
+  testList = [
+    { value: '-- placeholder --' },
+    { value: '-- placeholder --' },
+    { value: '-- placeholder --' },
+    { value: '-- placeholder --' }
   ];
 
   public editItem(value: string, index: number) {
-    this.testList[index] = value;
+    this.testList[index] = {"value": value};
   }
 
   public restoreDefaultSettings() {
     this.testList = [
-      '-- placeholder --',
-      '-- placeholder --',
-      '-- placeholder --',
-      '-- placeholder --'
+      { value: '-- placeholder --' },
+      { value: '-- placeholder --' },
+      { value: '-- placeholder --' },
+      { value: '-- placeholder --' }
     ];
   }
 }
